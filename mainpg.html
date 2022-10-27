@@ -5,12 +5,29 @@
    <meta charset="UTF-8">
    <title>PSF</title>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-   <link rel="stylesheet" href="mainpg.css">
+   <link rel="stylesheet" href="./CSS/mainpg.css">
+
+   <!--  -->
+   <link rel="stylesheet" href="./CSS/carousel.css">
+   <link rel="stylesheet" href="./CSS/jquery.flipster.min.css">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+   <script src="./JavaScript/jquery.flipster.min.js"></script>
+   <link rel="stylesheet" href="./CSS/jquery.flipster.min.css" type="text/css">
+   <script src="https://cdn.jsdelivr.net/highlight.js/9.9.0/highlight.min.js"></script>
+   <link rel="stylesheet" href="./CSS/">
+
+
+
 
 
 
    <!--  -->
-   <link rel="stylesheet" href="footer.css">
+   <link rel="stylesheet" href="./CSS/theme.css">
+
+
+   <!--  -->
+   <link rel="stylesheet" href="./CSS/footer.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
 
 
@@ -26,41 +43,181 @@
             <h1 class="main-title"><span class="thin">EXPLORE</span> SPACE</h1>
          </div>
       </div>
+      <!--  -->
+      <div class="content">
+         <div id="large-header2" class="large-header2">
+            <canvas id="demo-canvas">
+            </canvas>
+            <div id="E">
+
+               <!-- <br> -->
+               <div id="events">
+                  <div class="full-img" id="fullImgBo">
+                     <img src="./Images/baba_kalyani.jpeg" alt="" id="fullIm">
+                     <span onclick="closeFullImg()">
+                        <h2>X</h2>
+                     </span>
+                  </div>
+                  <div id="myslider">
+                     <ul>
+                        <li><img src="../Images/rachana.jpeg" class="img" alt="" onclick="openFullImg"></li>
+                        <!-- <li><img src="./Images/invite.jpeg" class="img" alt="" onclick="openFullImg"></li> -->
+                        <!-- <li><img src="./Images/rachana.jpeg" class="img" alt="" onclick="openFullImg"></li> -->
+                        <!-- <li><img src="./Images/z7.jpeg" class="img" alt=""></li>
+                               <li><img src="./Images/z8.jpeg" class="img" alt=""></li> -->
+                               <li><img src="../Images/invite.jpeg" class="img" alt="" onclick="openFullImg"></li>
+                        <li><img src="../Images/baba_kalyani.jpeg" class="img" alt="" onclick="openFullImg"></li>
+
+                        <!-- <li><img src="./Images/rachana.jpeg" class="img" alt="" onclick="openFullImg"></li> -->
+
+                     </ul>
+                  </div>
+
+
+
+
+                  <script>
+                     var fullImgBo = document.getElementById("fullImgBo");
+                     var fullImg = document.getElementById("fullIm");
+
+                     function openFullImg(pic) {
+                        fullImgBo.style.display = "flex";
+                        fullIm.src = pic;
+                     }
+
+                     function closeFullImg() {
+                        fullImgBo.style.display = "none";
+                        fullIm.src = pic;
+                     }
+
+                  </script>
+
+
+
+                  <script>
+                     $("#myslider").flipster();
+                  </script>
+               </div>
+               <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+            </div>
+         </div>
+      </div>
       <div class="theme">
-         <h2>
-            Our Theme This Year
-         </h2>
-         <h1>
-            Caressing Ideas
-         </h1>
-         <h1>
-            Cultivating Innovation!
-         </h1>
-         <h2>
-            Ascent of Entrepreneurial Renaissance
-         </h2>
+
+         <div class="waviy">
+            <div class="c">
+
+               <h1>Our Theme This Year</h1>
+            </div>
+            <div class="a">
+
+               <span style="--i:1">C</span>
+               <span style="--i:1">a</span>
+               <span style="--i:1">r</span>
+               <span style="--i:1">e</span>
+               <span style="--i:1">s</span>
+               <span style="--i:1">s</span>
+               <span style="--i:1">i</span>
+               <span style="--i:1">n</span>
+               <span style="--i:1">g</span>
+               <span style="--i:2">&nbsp;</span>
+               <span style="--i:2">I</span>
+               <span style="--i:2">d</span>
+               <span style="--i:2">e</span>
+               <span style="--i:2">a</span>
+               <span style="--i:2">s</span>
+            </div>
+            <div class="b">
+               <span style="--i:3">C</span>
+               <span style="--i:3">u</span>
+               <span style="--i:3">l</span>
+               <span style="--i:3">t</span>
+               <span style="--i:3">i</span>
+               <span style="--i:3">v</span>
+               <span style="--i:3">a</span>
+               <span style="--i:3">t</span>
+               <span style="--i:3">i</span>
+               <span style="--i:3">n</span>
+               <span style="--i:3">g</span>
+               <span style="--i:4">&nbsp;</span>
+               <span style="--i:4">I</span>
+               <span style="--i:4">n</span>
+               <span style="--i:4">n</span>
+               <span style="--i:4">o</span>
+               <span style="--i:4">v</span>
+               <span style="--i:4">a</span>
+               <span style="--i:4">t</span>
+               <span style="--i:4">i</span>
+               <span style="--i:4">o</span>
+               <span style="--i:4">n</span>
+               <span style="--i:4">!</span>
+
+            </div>
+            <div class="b">
+
+               <span style="--i:5">A</span>
+               <span style="--i:5">s</span>
+               <span style="--i:5">c</span>
+               <span style="--i:5">e</span>
+               <span style="--i:5">n</span>
+               <span style="--i:5">t</span>
+               <span style="--i:6">&nbsp;</span>
+               <span style="--i:6">o</span>
+               <span style="--i:6">f</span>
+               <span style="--i:7">&nbsp;</span>
+               <span style="--i:7">E</span>
+               <span style="--i:7">n</span>
+               <span style="--i:7">t</span>
+               <span style="--i:7">r</span>
+               <span style="--i:7">e</span>
+               <span style="--i:7">p</span>
+               <span style="--i:7">r</span>
+               <span style="--i:7">e</span>
+               <span style="--i:7">n</span>
+               <span style="--i:7">e</span>
+               <span style="--i:7">u</span>
+               <span style="--i:7">r</span>
+               <span style="--i:7">i</span>
+               <span style="--i:7">a</span>
+               <span style="--i:7">l</span>
+               <span style="--i:8">&nbsp;</span>
+               <span style="--i:8">R</span>
+               <span style="--i:8">e</span>
+               <span style="--i:8">n</span>
+               <span style="--i:8">a</span>
+               <span style="--i:8">i</span>
+               <span style="--i:8">s</span>
+               <span style="--i:8">s</span>
+               <span style="--i:8">a</span>
+               <span style="--i:8">n</span>
+               <span style="--i:8">c</span>
+               <span style="--i:8">e</span>
+            </div>
+            <!-- <br> -->
+            <!-- <br> -->
+
+         </div>
       </div>
-   </div>
-   <footer class="foot">
-      <div class="socialhandles">
-         <div><a href="https://www.linkedin.com/in/ompatil130503" target="_blank" class="social social1"><i
-                  class="fa-brands fa-linkedin"></i></a></div>
-         <div><a href="https://github.com/OmPat1l" class="social social2" target="_blank"><i
-                  class="fa-brands fa-twitter"></i></a></div>
-         <div><a href="https://www.instagram.com/0mpat1l/" class="social social3" target="_blank"><i
-                  class="fa-brands fa-instagram"></i></a></div>
-         <div><a href="mailto: omajitsinhpatil@gmail.com" class="social social4" target="_blank"><i
-                  class="fa-brands fa-facebook"></i></a></div>
+      <footer class="foot">
+         <div class="socialhandles">
+            <div><a href="https://www.linkedin.com/company/pune-startup-fest-19" target="_blank"
+                  class="social social1"><i class="fa-brands fa-linkedin"></i></a></div>
+            <div><a href="https://twitter.com/BIEC_COEP" class="social social2" target="_blank"><i
+                     class="fa-brands fa-twitter"></i></a></div>
+            <div><a href="https://www.instagram.com/biec_coep/" class="social social3" target="_blank"><i
+                     class="fa-brands fa-instagram"></i></a></div>
+            <div><a href="https://www.facebook.com/biec.coep" class="social social4" target="_blank"><i
+                     class="fa-brands fa-facebook"></i></a></div>
 
-      </div>
+         </div>
 
-   </footer>
+      </footer>
 
-   <!-- partial -->
-   <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js'></script>
-   <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js'></script>
-   <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js'></script>
-   <script src="./script.js"></script>
+      <!-- partial -->
+      <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js'></script>
+      <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js'></script>
+      <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js'></script>
+      <script src="./script.js"></script>
 
 </body>
 

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.theme {
+    /* background-color: #111;
+     */
+    background: url(../Images/th.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    font-family: 'Permanent Marker', cursive;
+
+    justify-content: center;
+    height: 30rem;
+}
+.theme .c{
+    display: flex;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.theme .a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.theme .b{
+display: flex;
+justify-content: center;
+}
+.waviy {
+    position: relative;
+    animation-name: backgroundColorPalette;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+    /* justify-content: center; */
+}
+
+.waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: #007bff;
+    text-shadow: 2px 2px 2px black;
+    text-transform: uppercase;
+    animation: flip 4.2s infinite;
+    animation-delay: calc(.5s * var(--i));
+}
+
+
+@keyframes backgroundColorPalette {
+	0% {
+		background: #ee6055;
+	}
+	25% {
+		background: #60d394;
+	}
+	50% {
+		background: #aaf683;
+	}
+	75% {
+		background: #ffd97d;
+	}
+	100% {
+		background: #ff9b85;
+	}
+}
+
+@keyframes flip {
+
+    0%,
+    80% {
+        transform: rotateY(360deg)
+    }
+}
